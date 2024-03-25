@@ -1,20 +1,21 @@
-//ex 5
-// for loop para digitar 3 números e somar.
+// ex 4, já adicionado no Notions
+//média de idades:
 
 #include <stdio.h>
 #include <math.h>
 
 int main(void)
 {
-    int c, x = 0, soma_c = 0, y;
-    printf("Quantos números serão digitados:");
-    scanf("%d", &c);
-
-    for ( y = 0; x < c; x++)
-    {
-        printf("Digite um número: ");
-        scanf("%d", &y);
-        soma_c = soma_c + y;
-    }
-    printf("TOTAL: %d\n", soma_c);
+int variavel, soma = 0, média = 0, contador = 0;
+printf("digite as idades: \n");
+scanf("%d", &variavel);
+do
+{
+contador = contador + 1;
+soma = soma + variavel;
+scanf("%d", &variavel);
+}
+while (variavel > 0);
+média = soma / contador;
+printf("Total: %d\n", média);
 }

@@ -1,21 +1,17 @@
-// ex 2, já adicionado no Notions
-//média de idades:
+//ex2
+//calcular área:
 
 #include <stdio.h>
 #include <math.h>
 
 int main(void)
 {
-int variavel, soma = 0, média = 0, contador = 0;
-printf("digite as idades: \n");
-scanf("%d", &variavel);
-do
-{
-contador = contador + 1;
-soma = soma + variavel;
-scanf("%d", &variavel);
+float b1, b2, h, area;
+b1 = 6.0;
+b2 = 8.0;
+h = 5.0;
+area = ((b1 + b2) / 2.0 * h);
+int area2 = (int)area;
+printf("%i\n",area2);
 }
-while (variavel > 0);
-média = soma / contador;
-printf("Total: %d\n", média);
-}
+
