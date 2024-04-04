@@ -1,8 +1,10 @@
 #include <stdio.h>
-#include <math.h>
-#include <string.h>
 
+int name[1][20]
 int main(void)
 {
-    string name = get_string("your name");
+    printf("Your name? ");
+    scanf("%c", name[1][20]);
+
+    printf("Hello, %c!");    
 }
